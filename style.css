@@ -1,80 +1,60 @@
 body {
   margin: 0;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
   font-family: 'Segoe UI', sans-serif;
-  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.calculator {
-  background: #222;
+.container {
+  background: #1f2937;
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   width: 320px;
-  color: white;
+  text-align: center;
 }
 
-.display {
-  background: #1a1a1a;
-  border-radius: 10px;
-  padding: 15px;
+h1 {
   margin-bottom: 20px;
-  text-align: right;
 }
 
-.expression {
-  font-size: 18px;
-  color: #bbb;
-  min-height: 22px;
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-.result {
-  font-size: 30px;
-  font-weight: bold;
+.input-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
   margin-top: 5px;
-  min-height: 30px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
-  font-size: 20px;
-  padding: 20px;
-  background: #333;
-  color: white;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 10px;
+  background-color: #4ade80;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #444;
-}
-
-.clear {
-  background: #e74c3c;
-}
-
-.clear:hover {
-  background: #c0392b;
-}
-
-.equal {
-  background: #2ecc71;
-}
-
-.equal:hover {
-  background: #27ae60;
-}
-
-.zero {
-  grid-column: span 2;
+  background-color: #22c55e;
 }
